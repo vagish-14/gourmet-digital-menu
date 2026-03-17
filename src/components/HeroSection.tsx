@@ -55,9 +55,9 @@ const HeroSection = () => {
           </a>
         </motion.div>
 
-        {/* Floating elements - hidden on mobile to avoid overlap */}
+        {/* Floating elements - repositioned on mobile */}
         <motion.div
-          className="absolute top-20 left-10 text-5xl animate-float hidden md:block"
+          className="absolute top-8 left-4 md:top-20 md:left-10 text-3xl md:text-5xl animate-float"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
@@ -65,7 +65,7 @@ const HeroSection = () => {
           ☕
         </motion.div>
         <motion.div
-          className="absolute bottom-20 right-10 text-5xl animate-float hidden md:block"
+          className="absolute top-8 right-4 md:bottom-20 md:top-auto md:right-10 text-3xl md:text-5xl animate-float"
           style={{ animationDelay: "1s" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
